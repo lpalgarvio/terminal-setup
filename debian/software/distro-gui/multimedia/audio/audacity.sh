@@ -7,5 +7,5 @@ sudo apt-get update;
 sudo apt-get install -y audacity;
 
 # Verifications
-$(which audacity) --version;
+#$(which audacity) --version;
 

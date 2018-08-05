@@ -9,5 +9,5 @@ sudo apt-get install -y remmina \
                                    remmina-plugin-vnc;
 
 # Verifications
-$(which remmina) --version;
+#$(which remmina) --version;
 

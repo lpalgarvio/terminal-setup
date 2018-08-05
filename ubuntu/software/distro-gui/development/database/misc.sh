@@ -7,5 +7,5 @@ sudo apt-get update;
 sudo apt-get install -y tora;
 
 # Verifications
-$(which tora) --version;
+#$(which tora) --version;
 

@@ -7,7 +7,8 @@ sudo apt-get update;
 sudo apt-get install -y ksshaskpass \
                                    kgpg \
                                    kleopatra \
-                                   knotes;
+                                   knotes \
+                                   kdeconnect;
 
 # Remove software
 sudo apt-get remove --purge -y kdepim \
@@ -31,4 +32,5 @@ $(which ksshaskpass) --version;
 $(which kgpg) --version;
 $(which kleopatra) --version;
 $(which knotes) --version;
+$(which kdeconnect) --version;
 

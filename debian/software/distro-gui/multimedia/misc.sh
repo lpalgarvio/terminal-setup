@@ -18,7 +18,7 @@ sudo apt-get install -y pulseaudio-module-x11 pulseaudio-utils \
 sudo apt-get remove --purge -y juk kscd;
 
 # Verifications
-$(which mediainfo-gui) --version;
+$(which mediainfo) --version;
 $(which amarok) --version;
 $(which vlc) --version;
 $(which acetoneiso) -h;

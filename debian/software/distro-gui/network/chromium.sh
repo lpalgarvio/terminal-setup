@@ -9,5 +9,5 @@ sudo apt-get install -y chromium-browser \
                                     chromium-codecs-ffmpeg-extra;
 
 # Verifications
-$(which chromium) --version;
+$(which chromium-browser) --version;
 

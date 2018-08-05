@@ -7,5 +7,5 @@ sudo apt-get update;
 sudo apt-get install -y xca;
 
 # Verifications
-$(which xca) version;
+$(which xca) -v;
 

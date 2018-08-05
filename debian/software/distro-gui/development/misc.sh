@@ -16,7 +16,7 @@ sudo apt-get remove --purge -y kommander kdevelop kdewebdev;
 
 # Verifications
 $(which kdiff3) --version;
-$(which komparator) --version;
+$(which komparator4) --version;
 $(which kompare) --version;
 $(which kate) --version;
 $(which xmlcopyeditor) --version;

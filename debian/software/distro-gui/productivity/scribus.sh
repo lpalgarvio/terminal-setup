@@ -4,8 +4,8 @@
 sudo apt-get update;
 
 # Install software
-sudo apt-get install -y tora;
+sudo apt-get install -y scribus scribus-template;
 
 # Verifications
-#$(which tora) --version;
+$(which scribus) --version;
 

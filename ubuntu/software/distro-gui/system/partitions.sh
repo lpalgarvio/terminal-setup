@@ -8,6 +8,6 @@ sudo apt-get install -y gparted \
                                    partitionmanager;
 
 # Verifications
-$(which gparted) --version;
+#$(which gparted) --version;
 $(which partitionmanager) --version;
 

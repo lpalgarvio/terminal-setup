@@ -7,5 +7,5 @@ sudo apt-get update;
 sudo apt-get install -y gnutls-bin;
 
 # Verifications
-$(which gnutls-bin) --version;
+$(which gnutls-cli) --version;
 

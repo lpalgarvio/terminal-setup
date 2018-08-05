@@ -10,6 +10,7 @@ sudo apt-get install -y kdenetwork-filesharing \
                                    mozplugger \
                                    kpartsplugin \
                                    kpart-webkit \
+                                   adobe-flash-properties-kde \
                                    krfb krdc \
                                    greenwich;
 
