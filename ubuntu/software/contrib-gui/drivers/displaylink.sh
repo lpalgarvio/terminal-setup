@@ -6,6 +6,9 @@
 # https://help.ubuntu.com/community/DisplayLink
 # https://github.com/AdnanHodzic/displaylink-debian
 # https://github.com/DisplayLink/evdi
+#
+# Disable Secure Boot !!!
+#
 
 # Install software
 wget http://assets.displaylink.com/live/downloads/software/f1123_DisplayLink%20USB%20Graphics%20Software%20for%20Ubuntu%204.2.zip?AWSAccessKeyId=AKIAJHGQWPVXWHEDJUEA&Expires=1532622794&Signature=AG4YqE%2B9JxDZLfdcPDNndWZjXng%3D -P /tmp/;
