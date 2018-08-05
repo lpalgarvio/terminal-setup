@@ -7,5 +7,6 @@ sudo apt-get update;
 sudo apt-get install -y grub2-common \
                                    grub-efi-amd64 \
                                    grub-efi-amd64-signed \
-                                   efibootmgr;
+                                   efibootmgr \
+                                   efitools;
 

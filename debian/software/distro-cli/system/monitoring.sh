@@ -9,13 +9,17 @@ sudo apt-get install -y htop \
                                    iftop \
                                    lsof \
                                    fdupes \
-                                   tree;
+                                   tree \
+                                   di \
+                                   locate;
 
 # Verifications
 $(which htop) --version;
 $(which iotop) --version;
 $(which iftop) -h;
-$(which lsof) --version;
+$(which lsof) -v;
 $(which fdupes) --version;
 $(which tree) --version;
+$(which di) --version;
+$(which locate) --version;
 
