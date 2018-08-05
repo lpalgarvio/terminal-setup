@@ -4,23 +4,15 @@
 sudo apt-get update;
 
 # Install software
-sudo apt-get install -y kde-config-systemd \
-                                   kde-config-qt-graphicssystem \
-                                   kde-config-gtk-style \
-                                   colord-kde \
-                                   kdeartwork kdeartwork-wallpapers kde-wallpapers \
-                                   ttf-mscorefonts-installer \
-                                   plasma-widgets-addons plasma-widget-weatherforecast \
-                                   kdesudo \
+sudo apt-get install -y ttf-mscorefonts-installer \
+                                   gnome-themes-standard gtk2-engines-pixbuf \
                                    konsole yakuake \
-                                   dolphin dolphin-plugins kde-service-menu-fuseiso kde-thumbnailer-deb \
+                                   dolphin dolphin-plugins \
                                    synaptic software-properties-kde \
                                    qapt-utils qapt-deb-installer \
-                                   gtkorphan \
-                                   kalternatives;
+                                   gtkorphan;
 
 # Verifications
-$(which kdesudo) --version;
 $(which konsole) --version;
 $(which yakuake) --version;
 $(which dolphin) --version;

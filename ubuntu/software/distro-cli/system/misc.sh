@@ -7,7 +7,8 @@ sudo apt-get update;
 sudo apt-get install -y sudo xterm \
                                    apt aptitude \
                                    debconf debconf-i18n \
-                                   deborphan dselect;
+                                   deborphan dselect \
+                                   popularity-contest;
 
 # Verifications
 $(which sudo) --version;

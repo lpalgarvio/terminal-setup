@@ -4,7 +4,9 @@
 sudo apt-get update;
 
 # Install software
-sudo apt-get install -y digikam kdegraphics-thumbnailers kipi-plugins \
+sudo apt-get install -y icc-profiles-free \
+                                    kdegraphics-thumbnailers kipi-plugins svgpart \
+                                    digikam \
                                     skanlite ksaneplugin xsane;
 
 # Remove software

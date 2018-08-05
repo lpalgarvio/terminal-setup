@@ -6,7 +6,8 @@ sudo apt-get update;
 # Install software
 sudo apt-get install -y kmail \
                                     kontact kaddressbook \
-                                    korganizer;
+                                    korganizer \
+                                    kdepim-addons;
 
 # Verifications
 $(which kmail) --version;

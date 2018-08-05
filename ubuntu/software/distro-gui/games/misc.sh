@@ -13,6 +13,7 @@ sudo apt-get install -y alien-arena \
                                    criticalmass \
                                    kcheckers \
                                    khangman \
+                                   knavalbattle \
                                    ksudoku \
                                    kubrick \
                                    pacman \
