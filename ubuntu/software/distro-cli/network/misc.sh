@@ -3,9 +3,6 @@
 # https://blog.remibergsma.com/tag/arping/
 # https://askubuntu.com/questions/1017286/what-is-the-difference-between-traceroute-from-traceroute-and-inetutils-tracerou
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y whois \
                                    iputils-arping \

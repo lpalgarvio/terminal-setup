@@ -1,23 +1,19 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y ttf-mscorefonts-installer \
-                                   gnome-themes-standard gtk2-engines-pixbuf \
                                    konsole yakuake \
                                    dolphin dolphin-plugins \
-                                   synaptic software-properties-kde \
+                                   software-properties-qt \
                                    qapt-utils qapt-deb-installer \
-                                   gtkorphan;
+                                   muon gtkorphan;
 
 # Verifications
 $(which konsole) --version;
 $(which yakuake) --version;
 $(which dolphin) --version;
-#$(which synaptic) --version;
-#$(which software-properties-kde) --version;
+$(which software-properties-qt) --version;
 $(which qapt-deb-installer) --version;
+$(which muon) --version;
 #$(which gtkorphan) --version;
 

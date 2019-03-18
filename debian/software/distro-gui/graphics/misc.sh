@@ -1,19 +1,15 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y icc-profiles-free \
-                                    kdegraphics-thumbnailers kipi-plugins svgpart \
-                                    digikam \
-                                    skanlite ksaneplugin xsane;
+                                    kdegraphics-thumbnailers svgpart \
+                                    skanlite;
+#sudo apt-get install -y kipi-plugins svgpart digikam;
 
 # Remove software
 sudo apt-get remove --purge -y kdegraphics-mobipocket kimagemapeditor;
 
 # Verifications
-$(which digikam) --version;
+#$(which digikam) --version;
 $(which skanlite) --version;
-$(which xsane) --version;
 

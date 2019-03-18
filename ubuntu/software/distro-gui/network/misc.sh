@@ -1,24 +1,15 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y kdenetwork-filesharing \
                                    kde-zeroconf \
-                                   browser-plugin-vlc \
-                                   mozplugger \
                                    kpartsplugin \
-                                   kpart-webkit \
-                                   adobe-flash-properties-kde \
-                                   krfb krdc \
-                                   greenwich;
+                                   krfb krdc;
 
 # Remove software
-sudo apt-get remove --purge kget;
+sudo apt-get remove --purge -y kget;
 
 # Verifications
 $(which krfb) --version;
 $(which krdc) --version;
-$(which greenwich) --version;
 

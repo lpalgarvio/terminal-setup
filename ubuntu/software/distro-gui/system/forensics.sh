@@ -1,17 +1,14 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y autopsy \
-                                   bleachbit \
-                                   sweeper \
-                                   secure-delete;
+                                   bleachbit sweeper \
+                                   secure-delete wipe;
 
 # Verifications
-$(which autopsy) -h;
+#$(which autopsy) -h;
 $(which bleachbit) --version;
 $(which sweeper) --version;
-$(which secure-delete) --version;
+#$(which sfill) -h;
+$(which wipe) -v;
 

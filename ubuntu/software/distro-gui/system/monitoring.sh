@@ -1,18 +1,15 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y kinfocenter \
-                                   ksysguard \
-                                   ksystemlog \
-                                   kdf \
-                                   filelight \
-                                   k4dirstat;
+                                   hardinfo lshw-gtk \
+                                   ksysguard ksystemlog \
+                                   kdf filelight k4dirstat;
 
 # Verifications
 $(which kinfocenter) --version;
+$(which hardinfo) --version;
+#$(which lshw-gtk) --version;
 $(which ksysguard) --version;
 $(which ksystemlog) --version;
 $(which kdf) --version;

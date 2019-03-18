@@ -1,26 +1,24 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
-sudo apt-get install -y kdiff3 komparator kompare \
+sudo apt-get install -y kompare \
                                    kate \
                                    xmlcopyeditor \
                                    okteta \
-                                   gtkhash \
-                                   klinkstatus;
+                                   gtkhash;
+#sudo apt-get install -y kdiff3 komparator \
+#                                   klinkstatus;
 
 # Remove software
-sudo apt-get remove --purge -y kommander kdevelop kdewebdev;
+sudo apt-get remove --purge -y kdevelop kdewebdev;
 
 # Verifications
-$(which kdiff3) --version;
-$(which komparator4) --version;
+#$(which kdiff3) --version;
+#$(which komparator4) --version;
 $(which kompare) --version;
 $(which kate) --version;
 $(which xmlcopyeditor) --version;
 $(which okteta) --version;
 $(which gtkhash) --version;
-$(which klinkstatus) --version;
+#$(which klinkstatus) --version;
 

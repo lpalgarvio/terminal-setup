@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y ksshaskpass \
                                    kgpg \
@@ -12,7 +9,7 @@ sudo apt-get install -y ksshaskpass \
 
 # Remove software
 sudo apt-get remove --purge -y kdepim \
-                                                  akregator blogilo \
+                                                  akregator \
                                                   kde-config-telepathy-accounts \
                                                   kde-telepathy kde-telepathy-minimal kde-telepathy-integration-module \
                                                   kde-telepathy-approver kde-telepathy-auth-handler \
@@ -24,7 +21,7 @@ sudo apt-get remove --purge -y kdepim \
                                                   telepathy-accounts-signon telepathy-mission-control-5 \
                                                   telepathy-idle telepathy-indicator telepathy-logger \
                                                   telepathy-gabble telepathy-haze telepathy-salut \
-                                                  kopete kopete-message-indicator \
+                                                  kopete \
                                                   konversation konversation-data;
 
 # Verifications
@@ -32,5 +29,5 @@ $(which ksshaskpass) --version;
 $(which kgpg) --version;
 $(which kleopatra) --version;
 $(which knotes) --version;
-$(which kdeconnect) --version;
+$(which kdeconnect-cli) --version;
 

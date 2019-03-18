@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software (client and server)
-sudo apt-get install -y openvpn \
-                                   openvpn-blacklist;
+sudo apt-get install -y openvpn;
 
 # Verifications
 $(which openvpn) --version;

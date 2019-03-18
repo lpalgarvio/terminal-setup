@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software (English)
 sudo apt-get install -y language-pack-en \
                                    language-pack-kde-en \

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y cpio bsdcpio \
                                    tar bsdtar \
@@ -25,5 +22,5 @@ $(which zip) --version;
 #$(which rar) --version;
 $(which par2) -V;
 #$(which pax) --version;
-$(which p7zip) --version;
+#$(which p7zip) --version;
 

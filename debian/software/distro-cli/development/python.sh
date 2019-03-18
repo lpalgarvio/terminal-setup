@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
 sudo apt-get install -y python python-minimal python-pip;
 sudo apt-get install -y python3 python3-minimal python3-pip;

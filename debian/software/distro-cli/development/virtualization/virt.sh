@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# Repositories and keys
-sudo apt-get update;
-
 # Install software
-sudo apt-get install -y libvirt-bin virtinst \
+sudo apt-get install -y virtinst \
                                    virt-goodies \
                                    virt-top virt-viewer;
 
@@ -12,8 +9,8 @@ sudo apt-get install -y libvirt-bin virtinst \
 $(which virt-admin) --version;
 
 # Configuration
-sudo systemctl enable libvirt-bin;
-sudo service libvirt-bin stop;
-sudo usermod -aG libvirtd $USER;
-sudo service libvirt-bin start;
+#sudo systemctl enable libvirt-bin;
+#sudo service libvirt-bin stop;
+#sudo usermod -aG libvirtd $USER;
+#sudo service libvirt-bin start;
 
