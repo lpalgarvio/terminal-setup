@@ -1,11 +1,15 @@
 #!/bin/bash
 # https://puppet.com/docs/puppet/5.3/install_linux.html
 
+# Retrieve distro information
+os_distro=`lsb_release -si | tr '[:upper:]' '[:lower:]'`;
+os_codename=`lsb_release -sc | tr '[:upper:]' '[:lower:]'`;
+
 # Repositories and keys
 sudo apt-key adv --keyserver pgp.mit.edu --recv-key 7F438280EF8D349F;
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-jessie.deb -P /tmp/;
-sudo dpkg -i /tmp/puppetlabs-release-pc1-jessie.deb;
-rm -f /tmp/puppetlabs-release-pc1-jessie.deb;
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-${os_codename}.deb -P /tmp/;
+sudo dpkg -i /tmp/puppetlabs-release-pc1-${os_codename}.deb;
+rm -f /tmp/puppetlabs-release-pc1-${os_codename}.deb;
 sudo apt-get update;
 
 # Install software (client)

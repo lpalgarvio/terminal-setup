@@ -3,10 +3,10 @@
 
 # Repositories and keys
 wget -O- https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/yarn.list
-# Yarn repository
+sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/yarn.list
+# Yarn
 deb https://dl.yarnpkg.com/debian/ stable main
-EOF';
+EOF";
 sudo apt-get update;
 
 # Install software

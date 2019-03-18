@@ -1,22 +1,27 @@
 #!/bin/bash
 # https://docs.docker.com/install/linux/docker-ce/debian/
 
+# Retrieve distro information
+os_distro=`lsb_release -si | tr '[:upper:]' '[:lower:]'`;
+os_codename=`lsb_release -sc | tr '[:upper:]' '[:lower:]'`;
+
 # Repositories and keys
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 0EBFCD88;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/docker.list
+sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/docker.list
 # Docker
-deb [arch=amd64] https://download.docker.com/linux/debian jessie stable
-EOF'
+deb [arch=amd64] https://download.docker.com/linux/${os_distro} ${os_codename} stable
+EOF";
 sudo apt-get update;
 
 # Install dependencies
-sudo apt-get install -y linux-image-extra-$(uname -r);
+sudo apt-get install -y linux-image-extra-virtual;
 
 # Remove old software
 sudo apt-get remove -y docker docker-engine docker.io;
 
 # Install software
-sudo apt-get install -y docker-ce;
+sudo apt-get install -y docker-ce \
+                                   docker-compose;
 
 # Configuration
 sudo service docker start;

@@ -2,7 +2,7 @@
 # https://rocket.chat/install
 
 # Releases
-app_release='2.11.0';
+app_release='2.15.1';
 
 # Install dependencies
 sudo apt-get install -y libappindicator1;

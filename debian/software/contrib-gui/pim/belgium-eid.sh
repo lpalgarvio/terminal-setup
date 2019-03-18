@@ -2,14 +2,12 @@
 # https://eid.belgium.be/en/linux-eid-software-installation
 
 # Releases
-app_release='2018.2';
+app_release='2019.1';
 
 # Repositories and keys
-curl -sL http://files.eid.belgium.be/debian/dists/jessie/Release.gpg | sudo apt-key add -;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/belgium-eid.list
-# Belgium eID
-deb [arch=amd64] http://files.eid.belgium.be/debian/ jessie main
-EOF';
+wget https://eid.belgium.be/sites/default/files/software/eid-archive_${app_release}_all.deb -P /tmp/ -O /tmp/eid-archive_${app_release}_all.deb;
+sudo dpkg -i /tmp/eid-archive_${app_release}_all.deb;
+rm -f /tmp/eid-archive_${app_release}_all.deb;
 sudo apt-get update;
 
 # Install software

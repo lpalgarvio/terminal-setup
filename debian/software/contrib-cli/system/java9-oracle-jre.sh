@@ -3,11 +3,11 @@
 
 # Repositories and keys
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/webupd8team-java.list
-# Longview
+sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/webupd8team-java.list
+# Oracle Java 9
 deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
 deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
-EOF'
+EOF";
 sudo apt-get update;
 
 # Install software

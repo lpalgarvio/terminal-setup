@@ -3,10 +3,10 @@
 
 # Repositories and keys
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/syncthing.list
+sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/syncthing.list
 # Syncthing
 deb https://apt.syncthing.net/ syncthing stable
-EOF';
+EOF";
 sudo apt-get update;
 
 # Install software

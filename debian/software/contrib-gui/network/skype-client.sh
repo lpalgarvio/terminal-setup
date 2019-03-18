@@ -3,10 +3,10 @@
 
 # Repositories and keys
 curl -sL https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -;
-sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/skype-stable.list
+sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/skype-stable.list
 # Skype Client
 deb [arch=amd64] https://repo.skype.com/deb stable main
-EOF';
+EOF";
 sudo apt-get update;
 
 # Install dependencies
