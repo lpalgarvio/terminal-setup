@@ -9,7 +9,7 @@ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -;
 sudo bash -c "cat <<EOF > /etc/apt/sources.list.d/virtualbox.list
 # Virtualbox
-deb [arch=amd64] https://download.virtualbox.org/virtualbox/${os_distro} ${os_codename} contrib
+deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian ${os_codename} contrib
 EOF";
 sudo apt-get update;
 

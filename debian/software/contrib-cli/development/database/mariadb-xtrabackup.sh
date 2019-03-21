@@ -3,12 +3,15 @@
 
 # Releases
 app_release='0.1-6';
-os_release=$(lsb_release -sc);
+
+# Retrieve distro information
+os_distro=`lsb_release -si | tr '[:upper:]' '[:lower:]'`;
+os_codename=`lsb_release -sc | tr '[:upper:]' '[:lower:]'`;
 
 # Repositories and keys
-wget https://repo.percona.com/apt/percona-release_${app_release}.${os_release}_all.deb -P /tmp/;
-sudo dpkg -i /tmp/percona-release_${app_release}.${os_release}_all.deb;
-rm -f /tmp/percona-release_${app_release}.${os_release}_all.deb;
+wget https://repo.percona.com/apt/percona-release_${app_release}.${os_codename}_all.deb -P /tmp/;
+sudo dpkg -i /tmp/percona-release_${app_release}.${os_codename}_all.deb;
+rm -f /tmp/percona-release_${app_release}.${os_codename}_all.deb;
 sudo apt-get update;
 
 # Install software

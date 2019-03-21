@@ -20,7 +20,7 @@ sudo apt-get install -y php7.2-fpm php7.2-cgi php7.2-cli php7.2-xdebug php7.2-op
 sudo apt-get install -y php-pear php-ssh2;
 
 # Configure
-sudo update-alternatives --set php $(which php5);
+sudo update-alternatives --set php $(which php7.1);
 
 # Verifications
 $(which php) -v;
