@@ -17,10 +17,10 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-php-mars.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse PHP Neon
-Comment=Eclipse PHP Neon IDE
-Icon=/opt/eclipse/php-mars/eclipse/icon.xpm
-Exec="/opt/eclipse/php-mars/eclipse/eclipse" %f
+Name=Eclipse PHP Mars
+Comment=Eclipse PHP Mars IDE
+Icon=/opt/eclipse/mars/php-mars/eclipse/icon.xpm
+Exec="/opt/eclipse/mars/php-mars/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -28,10 +28,21 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-javascript-mars.deskto
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse Javascript Neon
-Comment=Eclipse Javascript Neon IDE
-Icon=/opt/eclipse/javascript-mars/eclipse/icon.xpm
-Exec="/opt/eclipse/javascript-mars/eclipse/eclipse" %f
+Name=Eclipse Javascript Mars
+Comment=Eclipse Javascript Mars IDE
+Icon=/opt/eclipse/mars/javascript-mars/eclipse/icon.xpm
+Exec="/opt/eclipse/mars/javascript-mars/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-java-mars.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse Java Mars
+Comment=Eclipse Java Mars IDE
+Icon=/opt/eclipse/mars/java-mars/eclipse/icon.xpm
+Exec="/opt/eclipse/mars/java-mars/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -39,10 +50,21 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-android-mars.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse Android Neon
-Comment=Eclipse Android Neon IDE
-Icon=/opt/eclipse/android-mars/eclipse/icon.xpm
-Exec="/opt/eclipse/android-mars/eclipse/eclipse" %f
+Name=Eclipse Android Mars
+Comment=Eclipse Android Mars IDE
+Icon=/opt/eclipse/mars/android-mars/eclipse/icon.xpm
+Exec="/opt/eclipse/mars/android-mars/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-cpp-mars.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse C++ Mars
+Comment=Eclipse C++ Mars IDE
+Icon=/opt/eclipse/mars/cpp-mars/eclipse/icon.xpm
+Exec="/opt/eclipse/mars/cpp-mars/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';

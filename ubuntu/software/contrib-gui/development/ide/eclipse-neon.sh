@@ -19,8 +19,8 @@ Version=1.0
 Type=Application
 Name=Eclipse PHP Neon
 Comment=Eclipse PHP Neon IDE
-Icon=/opt/eclipse/php-neon/eclipse/icon.xpm
-Exec="/opt/eclipse/php-neon/eclipse/eclipse" %f
+Icon=/opt/eclipse/neon/php-neon/eclipse/icon.xpm
+Exec="/opt/eclipse/neon/php-neon/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -30,8 +30,19 @@ Version=1.0
 Type=Application
 Name=Eclipse Javascript Neon
 Comment=Eclipse Javascript Neon IDE
-Icon=/opt/eclipse/javascript-neon/eclipse/icon.xpm
-Exec="/opt/eclipse/javascript-neon/eclipse/eclipse" %f
+Icon=/opt/eclipse/neon/javascript-neon/eclipse/icon.xpm
+Exec="/opt/eclipse/neon/javascript-neon/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-java-neon.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse Java Neon
+Comment=Eclipse Java Neon IDE
+Icon=/opt/eclipse/neon/java-neon/eclipse/icon.xpm
+Exec="/opt/eclipse/neon/java-neon/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -41,8 +52,19 @@ Version=1.0
 Type=Application
 Name=Eclipse Android Neon
 Comment=Eclipse Android Neon IDE
-Icon=/opt/eclipse/android-neon/eclipse/icon.xpm
-Exec="/opt/eclipse/android-neon/eclipse/eclipse" %f
+Icon=/opt/eclipse/neon/android-neon/eclipse/icon.xpm
+Exec="/opt/eclipse/neon/android-neon/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-cpp-neon.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse C++ Neon
+Comment=Eclipse C++ Neon IDE
+Icon=/opt/eclipse/neon/cpp-neon/eclipse/icon.xpm
+Exec="/opt/eclipse/neon/cpp-neon/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';

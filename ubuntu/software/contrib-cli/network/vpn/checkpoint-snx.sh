@@ -30,5 +30,5 @@ sudo git clone https://git.code.sf.net/p/sfreleasetools/code /opt/releasetools;
 sudo -H bash -c '(cd /opt/snxvpn; make; python2 setup.py install --prefix=/usr/local)';
 
 $(which snx) -h;
-$(which snxvpn) -h;
+$(which snxconnect) -h;
 

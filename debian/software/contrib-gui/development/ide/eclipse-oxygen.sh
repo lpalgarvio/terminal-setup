@@ -17,10 +17,10 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-php-oxygen.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse PHP Neon
-Comment=Eclipse PHP Neon IDE
-Icon=/opt/eclipse/php-oxygen/eclipse/icon.xpm
-Exec="/opt/eclipse/php-oxygen/eclipse/eclipse" %f
+Name=Eclipse PHP Oxygen
+Comment=Eclipse PHP Oxygen IDE
+Icon=/opt/eclipse/oxygen/php-oxygen/eclipse/icon.xpm
+Exec="/opt/eclipse/oxygen/php-oxygen/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -28,10 +28,21 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-javascript-oxygen.desk
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse Javascript Neon
-Comment=Eclipse Javascript Neon IDE
-Icon=/opt/eclipse/javascript-oxygen/eclipse/icon.xpm
-Exec="/opt/eclipse/javascript-oxygen/eclipse/eclipse" %f
+Name=Eclipse Javascript Oxygen
+Comment=Eclipse Javascript Oxygen IDE
+Icon=/opt/eclipse/oxygen/javascript-oxygen/eclipse/icon.xpm
+Exec="/opt/eclipse/oxygen/javascript-oxygen/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-java-oxygen.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse Java Oxygen
+Comment=Eclipse Java Oxygen IDE
+Icon=/opt/eclipse/oxygen/java-oxygen/eclipse/icon.xpm
+Exec="/opt/eclipse/oxygen/java-oxygen/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
@@ -39,10 +50,21 @@ sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-android-oxygen.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Eclipse Android Neon
-Comment=Eclipse Android Neon IDE
-Icon=/opt/eclipse/android-oxygen/eclipse/icon.xpm
-Exec="/opt/eclipse/android-oxygen/eclipse/eclipse" %f
+Name=Eclipse Android Oxygen
+Comment=Eclipse Android Oxygen IDE
+Icon=/opt/eclipse/oxygen/android-oxygen/eclipse/icon.xpm
+Exec="/opt/eclipse/oxygen/android-oxygen/eclipse/eclipse" %f
+Categories=Development;IDE;
+Terminal=false
+EOF';
+sudo bash -c 'cat <<EOF > /usr/share/applications/eclipse-cpp-oxygen.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Eclipse C++ Oxygen
+Comment=Eclipse C++ Oxygen IDE
+Icon=/opt/eclipse/oxygen/cpp-oxygen/eclipse/icon.xpm
+Exec="/opt/eclipse/oxygen/cpp-oxygen/eclipse/eclipse" %f
 Categories=Development;IDE;
 Terminal=false
 EOF';
