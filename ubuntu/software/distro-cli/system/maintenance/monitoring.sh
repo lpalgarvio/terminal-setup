@@ -4,19 +4,11 @@
 sudo apt-get install -y htop \
                                    iotop \
                                    iftop \
-                                   lsof \
-                                   fdupes \
-                                   tree \
-                                   di \
-                                   locate;
+                                   lsof;
 
 # Verifications
 $(which htop) --version;
 $(which iotop) --version;
 $(which iftop) -h;
 $(which lsof) -v;
-$(which fdupes) --version;
-$(which tree) --version;
-$(which di) --version;
-$(which locate) --version;
 

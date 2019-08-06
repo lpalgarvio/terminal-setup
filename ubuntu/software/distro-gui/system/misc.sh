@@ -6,7 +6,7 @@ sudo apt-get install -y ttf-mscorefonts-installer \
                                    dolphin dolphin-plugins \
                                    software-properties-qt \
                                    qapt-utils qapt-deb-installer \
-                                   muon gtkorphan;
+                                   muon synaptic gtkorphan;
 
 # Verifications
 $(which konsole) --version;
@@ -15,5 +15,6 @@ $(which dolphin) --version;
 $(which software-properties-qt) --version;
 $(which qapt-deb-installer) --version;
 $(which muon) --version;
+$(which synaptic) -h;
 #$(which gtkorphan) --version;
 

@@ -9,7 +9,8 @@ sudo apt-get install -y sudo xterm \
 
 # Verifications
 $(which sudo) --version;
-#$(which apt) --version;
+$(which apt) --version;
 #$(which apt-file) --version;
 $(which aptitude) --version;
+$(which deborphan) --version;
 

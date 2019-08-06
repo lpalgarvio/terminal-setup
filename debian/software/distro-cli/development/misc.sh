@@ -4,7 +4,7 @@
 sudo apt-get install -y mawk gawk \
                                    bison \
                                    bc \
-                                   make automake autoconf build-essential \
+                                   make cmake automake autoconf build-essential \
                                    patch patchutils diffutils \
                                    jacksum;
 
@@ -16,6 +16,7 @@ $(which awk) --version;
 $(which bison) --version;
 $(which bc) --version;
 $(which make) --version;
+$(which cmake) --version;
 $(which patch) --version;
 $(which diff) --version;
 $(which jacksum) --version;

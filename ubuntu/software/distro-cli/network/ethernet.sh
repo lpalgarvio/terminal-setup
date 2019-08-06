@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # Install software
-sudo apt-get install -y ethtool macchanger wakeonlan;
+sudo apt-get install -y ethtool bridge-utils;
 
 # Verifications
 $(which ethtool) --version;
-$(which macchanger) --version;
-$(which wakeonlan) -v;
+$(which bridge) --Version;
 

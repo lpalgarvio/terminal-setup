@@ -5,7 +5,7 @@ sudo apt-get install -y python python-minimal python-pip;
 sudo apt-get install -y python3 python3-minimal python3-pip;
 
 # Configuration
-sudo update-alternatives --set python $(which python2.7);
+#sudo update-alternatives --set python $(which python2.7);
 
 # Verifications
 $(which python) --version;

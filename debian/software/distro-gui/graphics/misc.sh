@@ -3,13 +3,13 @@
 # Install software
 sudo apt-get install -y icc-profiles-free \
                                     kdegraphics-thumbnailers svgpart \
+                                    digikam kipi-plugins \
                                     skanlite;
-#sudo apt-get install -y kipi-plugins svgpart digikam;
 
 # Remove software
 sudo apt-get remove --purge -y kdegraphics-mobipocket kimagemapeditor;
 
 # Verifications
-#$(which digikam) --version;
+$(which digikam) --version;
 $(which skanlite) --version;
 
