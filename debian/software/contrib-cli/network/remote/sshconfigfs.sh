@@ -5,7 +5,7 @@
 sudo apt-get install -y ssh python-pip python-setuptools python-wheel python-fuse;
 
 # Install software
-wget https://github.com/markhellewell/sshconfigfs/archive/master.zip -P /tmp/;
+wget https://github.com/revboot/sshconfigfs/archive/master.zip -P /tmp/;
 sudo unzip -q /tmp/master.zip -d /opt/;
 sudo rm -Rf /opt/sshconfigfs;
 sudo mv /opt/sshconfigfs-master /opt/sshconfigfs;
