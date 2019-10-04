@@ -1,5 +1,6 @@
 #!/bin/bash
-# http://multibootusb.org/page_download/
+# http://multibootusb.org/page_download
+# https://github.com/mbusb/multibootusb
 
 # Releases
 app_release='9.2.0';
