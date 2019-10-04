@@ -2,7 +2,7 @@
 # https://github.com/sindresorhus/caprine
 
 # Releases
-app_release='2.30.1';
+app_release='2.38.0';
 
 # Install dependencies
 sudo apt-get install -y libappindicator1 gconf2 gconf-service;

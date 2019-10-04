@@ -2,7 +2,7 @@
 # https://desktop.telegram.org/
 
 # Releases
-app_release='1.5.15';
+app_release='1.8.13';
 
 # Install software (client)
 wget https://updates.tdesktop.com/tlinux/tsetup.${app_release}.tar.xz -P /tmp/;
