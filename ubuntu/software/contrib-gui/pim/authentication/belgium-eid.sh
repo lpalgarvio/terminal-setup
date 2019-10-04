@@ -2,7 +2,7 @@
 # https://eid.belgium.be/en/linux-eid-software-installation
 
 # Releases
-app_release='2019.1';
+app_release='2019.4';
 
 # Repositories and keys
 wget https://eid.belgium.be/sites/default/files/software/eid-archive_${app_release}_all.deb -P /tmp/ -O /tmp/eid-archive_${app_release}_all.deb;
