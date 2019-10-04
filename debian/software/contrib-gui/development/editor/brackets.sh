@@ -2,7 +2,7 @@
 # https://github.com/adobe/brackets
 
 # Releases
-app_release='1.13';
+app_release='1.14';
 
 # Install software
 wget https://github.com/adobe/brackets/releases/download/release-${app_release}/Brackets.Release.${app_release}.64-bit.deb -P /tmp/;
