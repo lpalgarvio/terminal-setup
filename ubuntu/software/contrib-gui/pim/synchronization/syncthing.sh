@@ -1,5 +1,6 @@
 #!/bin/bash
-# https://apt.syncthing.net/
+# https://github.com/syncthing/syncthing-gtk
+# https://launchpad.net/~nilarimogard/+archive/ubuntu/webupd8
 
 # Repositories and keys
 sudo add-apt-repository ppa:nilarimogard/webupd8;
