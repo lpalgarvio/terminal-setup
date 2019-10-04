@@ -1,11 +1,11 @@
 #!/bin/bash
-# https://docs.mattermost.com/install/desktop.html#linux-beta
+# https://docs.mattermost.com/install/desktop.html#linux
 
 # Releases
-app_release='4.1.2';
+app_release='4.2.3';
 
 # Install dependencies
-sudo apt-get install -y libappindicator1;
+sudo apt-get install -y libappindicator1 gconf2;
 
 # Install software (client)
 wget https://releases.mattermost.com/desktop/${app_release}/mattermost-desktop-${app_release}-linux-amd64.deb -P /tmp/;

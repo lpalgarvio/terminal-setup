@@ -2,10 +2,10 @@
 # https://rocket.chat/install
 
 # Releases
-app_release='2.15.1';
+app_release='2.15.5';
 
 # Install dependencies
-sudo apt-get install -y libappindicator1;
+sudo apt-get install -y libappindicator1 gconf2;
 
 # Install software (client)
 wget https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/${app_release}/rocketchat_${app_release}_amd64.deb -P /tmp/;
