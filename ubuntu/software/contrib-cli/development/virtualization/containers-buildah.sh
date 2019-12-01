@@ -7,3 +7,6 @@ sudo apt-add-repository --yes --update ppa:projectatomic/ppa;
 # Install software
 sudo apt-get install -y buildah;
 
+# Verifications
+$(which buildah) version;
+

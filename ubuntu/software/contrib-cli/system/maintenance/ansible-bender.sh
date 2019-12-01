@@ -5,3 +5,6 @@
 # Install software via pip
 sudo pip3 install --system ansible-bender;
 
+# Verifications
+$(which ansible-bender) --version;
+

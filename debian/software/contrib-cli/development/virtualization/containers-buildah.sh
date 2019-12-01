@@ -12,3 +12,6 @@ sudo apt-get update;
 # Install software
 sudo apt-get install -y buildah;
 
+# Verifications
+$(which buildah) version;
+

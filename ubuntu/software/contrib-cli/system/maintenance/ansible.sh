@@ -7,3 +7,6 @@ sudo apt-add-repository --yes --update ppa:ansible/ansible;
 # Install software
 sudo apt-get install -y ansible;
 
+# Verifications
+$(which ansible) --version;
+

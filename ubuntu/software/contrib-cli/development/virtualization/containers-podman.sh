@@ -10,3 +10,6 @@ sudo apt-get install -y uidmap;
 # Install software
 sudo apt-get install -y podman;
 
+# Verifications
+$(which podman) version;
+
