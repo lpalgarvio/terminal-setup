@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Install software
+# Install software (client)
 sudo apt-get install -y postgresql-client;
 
