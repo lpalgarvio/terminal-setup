@@ -3,14 +3,15 @@
 # Install software
 sudo apt-get install -y virtinst \
                                    virt-goodies \
-                                   virt-top virt-viewer;
+                                   virt-top;
 
 # Verifications
 $(which virt-admin) --version;
+$(which virt-top) --help;
 
 # Configuration
-#sudo systemctl enable libvirt-bin;
-#sudo service libvirt-bin stop;
-#sudo usermod -aG libvirtd $USER;
-#sudo service libvirt-bin start;
+sudo systemctl enable libvirtd;
+sudo service libvirtd stop;
+sudo usermod -aG libvirt $USER;
+sudo service libvirtd start;
 
