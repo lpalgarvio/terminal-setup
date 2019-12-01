@@ -4,5 +4,5 @@
 sudo apt-get install -y heimdall-flash-frontend;
 
 # Verifications
-$(which heimdall) --version;
+$(which heimdall) version;
 
