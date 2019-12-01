@@ -10,8 +10,7 @@ sudo apt-get install -y whois \
                                    iputils-tracepath traceroute \
                                    telnet \
                                    ftp \
-                                   wget curl \
-                                   apache2-utils;
+                                   wget curl;
 
 # Configuration
 #sudo update-alternatives --set ping $(which ping);
@@ -27,5 +26,4 @@ $(which traceroute) --version;
 #$(which ftp) --version;
 $(which wget) --version;
 $(which curl) --version;
-$(which ab) -V;
 
