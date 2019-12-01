@@ -6,7 +6,7 @@
 app_release='Ubuntu_18';
 
 # Install dependencies
-sudo apt-get install -y qtbase-abi-5-9-5 libnsspem libcurl3-nss libxml-security-c17v5 pcscd pcsc-tools libccid;
+sudo apt-get install -y qtbase-abi-5-9-5 libnsspem libcurl3-nss libxml-security-c17v5 pcscd pcsc-tools libccid openjdk-8-jre;
 
 # Install software (plugin)
 wget https://autenticacao.gov.pt/fa/ajuda/software/plugin-autenticacao-gov.deb -P /tmp/ -O /tmp/plugin-autenticacao-gov.deb;
