@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Install software - Linux 4.18
+# Install software - Linux 4.x
 sudo apt-get install -y linux-generic \
                                    linux-signed-generic;
 
