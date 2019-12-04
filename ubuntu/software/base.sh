@@ -9,8 +9,7 @@ sudo apt-get install -y command-not-found \
                                    locate fdupes \
                                    tree di \
                                    nano vim vim-tiny \
-                                   rsync \
-                                   screen tmux byobu;
+                                   rsync;
 
 # Verifications
 $(which grep) --version;
@@ -22,7 +21,4 @@ $(which di) --version;
 $(which nano) --version;
 $(which vim) --version;
 $(which rsync) --version;
-$(which screen) --version;
-$(which tmux) --version;
-$(which byobu) --version;
 
