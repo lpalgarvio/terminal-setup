@@ -4,5 +4,10 @@
 sudo apt-get update;
 
 # Install software
-sudo apt-get install -y apt-transport-https ca-certificates;
+sudo apt-get install -y sudo \
+                        apt-transport-https \
+                        ca-certificates;
+
+# Verifications
+$(which sudo) --version;
 
