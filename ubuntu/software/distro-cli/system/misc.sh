@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Install software
-sudo apt-get install -y sudo xterm \
-                                   apt apt-file aptitude \
+sudo apt-get install -y sudo apt apt-file aptitude \
                                    debconf debconf-i18n \
                                    deborphan dselect \
                                    popularity-contest;
