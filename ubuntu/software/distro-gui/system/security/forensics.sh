@@ -2,13 +2,10 @@
 
 # Install software
 sudo apt-get install -y autopsy \
-                                   bleachbit sweeper \
-                                   secure-delete wipe;
+                                   bleachbit sweeper;
 
 # Verifications
-#$(which autopsy) -h;
+$(which autopsy) -h;
 $(which bleachbit) --version;
 $(which sweeper) --version;
-#$(which sfill) -h;
-$(which wipe) -v;
 
