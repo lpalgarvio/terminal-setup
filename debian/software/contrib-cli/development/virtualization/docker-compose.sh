@@ -2,7 +2,7 @@
 # https://docs.docker.com/compose/install/
 
 # Releases
-app_release='1.21.2';
+app_release='1.25.3';
 
 # Remove software
 sudo apt-get remove --purge -y docker-compose;
