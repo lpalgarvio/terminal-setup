@@ -6,6 +6,7 @@ sudo apt-get install -y kompare \
                                    xmlcopyeditor \
                                    okteta \
                                    gtkhash;
+#sudo apt-get install -y meld diffuse;
 #sudo apt-get install -y kdiff3 komparator \
 #                                   klinkstatus;
 
@@ -13,6 +14,8 @@ sudo apt-get install -y kompare \
 sudo apt-get remove --purge -y kdevelop kdewebdev;
 
 # Verifications
+#$(which meld) --version;
+#$(which diffuse) --version;
 #$(which kdiff3) --version;
 #$(which komparator4) --version;
 $(which kompare) --version;

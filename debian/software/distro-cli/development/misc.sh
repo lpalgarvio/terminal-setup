@@ -5,7 +5,7 @@ sudo apt-get install -y mawk gawk \
                                    bison \
                                    bc \
                                    make cmake automake autoconf build-essential \
-                                   patch patchutils diffutils \
+                                   patch patchutils diffutils colordiff \
                                    jacksum;
 
 # Configuration
@@ -19,5 +19,6 @@ $(which make) --version;
 $(which cmake) --version;
 $(which patch) --version;
 $(which diff) --version;
+$(which colordiff) --version;
 $(which jacksum) --version;
 
